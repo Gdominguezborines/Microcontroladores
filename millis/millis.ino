@@ -4,6 +4,7 @@ a. Repetir el ejercicio 2 usando la función millis().
 
 uint64_t ultimaImpresion = 0;
 int cont = 0;
+
 void setup() {
 Serial.begin(9600);
 }
@@ -18,5 +19,5 @@ void loop() {
       Serial.println(cont);
       cont++;
       ultimaImpresion =momentoActual;
-}
+  }
 }
