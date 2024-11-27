@@ -6,17 +6,17 @@ uint64_t ultimaImpresion = 0;
 int cont = 0;
 
 void setup() {
-Serial.begin(9600);
+    Serial.begin(9600);
 }
 
 void loop() {
-// Creamos un contador pero usamos temporizaciones mediante consulta de ciclos millis()  micros()
+  // Creamos un contador pero usamos temporizaciones mediante consulta de ciclos millis()  micros()
   
   uint64_t momentoActual = millis();
   
+
   if((momentoActual - ultimaImpresion)>1000){
-      Serial.print("Numero : ");
-      Serial.println(cont);
+      Serial.print("Numero : "+string(cont));
       cont++;
       ultimaImpresion =momentoActual;
   }
