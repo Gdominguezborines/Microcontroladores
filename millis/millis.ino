@@ -16,7 +16,7 @@ void loop() {
   
 
   if((momentoActual - ultimaImpresion)>1000){
-      Serial.print("Numero : "+string(cont));
+      Serial.println("Numero : "+String(cont));
       cont++;
       ultimaImpresion =momentoActual;
   }

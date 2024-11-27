@@ -7,7 +7,7 @@ void setup() {
 void loop() {
     // Creamos un contador con tu delay de 1seg
       
-      Serial.print("Numero : "+string(cont));
+      Serial.println("Numero : "+String(cont));
       cont++;
       delay(1000);
 }
